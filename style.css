@@ -1,0 +1,298 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.header-logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.header-nav {
+    border-bottom: black 7px solid;
+    margin-bottom: 10px;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.header-list li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.header-list li a {
+    text-decoration: none;
+    color: black;
+}
+.header-list li a:hover {
+    color: lightgrey;
+    transition: all 0.5s;
+}
+
+.top-wrap {
+    background-color: darkgray;
+}
+
+.top-img {
+    width: 70%;
+    margin: 0 auto;
+    height: 450px;
+}
+
+.menu {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+}
+
+
+
+.drink {
+    padding-left: 30px;
+}
+
+.item {
+   padding-left: 30px;
+}
+
+.news {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.top-news {
+    width: 48%;
+    border:dimgray 1px solid;
+}
+
+.news-title {
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    line-height: 70px;
+    border-bottom: lightgrey 1px solid;
+}
+
+.news-title h1 {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.news-title p {
+    color: lightgrey;
+}
+
+.news-list li {
+    list-style: none;
+    border-bottom: lightgrey 1px solid;
+    padding: 20px 20px 20px 20px;
+}
+
+.news-list li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.news-list li:hover {
+    background-color: lightgrey;
+}
+
+.footer {
+    background-color: lightgrey;
+    border-top: black 3px solid;
+    margin-top: 100px;
+}
+
+.footer-content {
+   display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 130px;
+}
+
+.footer-nav {
+    display: flex;
+    padding: 20px 0;
+}
+
+.footer-nav li {
+    list-style: none;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.tell, 
+.contact {
+    display: block;
+}
+
+.tell {
+    padding: 20px 0;
+}
+
+.footer2 {
+    background-color: white;
+}
+
+.footer-contact2 {
+     display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer-contact2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-img {
+    padding: 20px 0 10px 15%;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+
+    .header {
+        width: 100%;
+        
+    }
+    .top-img {
+        width: 100%;
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .news {
+        width: 100%;
+    }
+}
