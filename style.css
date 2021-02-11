@@ -170,23 +170,27 @@ body {
 
 
 .menu {
-    text-align: center;
     margin: 0 auto;
     padding: 40px 0 40px 0;
+    width: 70%;
+}
+
+.menu-content {
+    width: 100%;
 }
 
 .eat img{
-    width: 31%;
+  width: 31%;
 }
 
 .drink img{
-    padding-left: 3.5%;
-    width: 31%;
+width: 31%;
+padding-left: 3.5%;
 }
 
 .item img{
+ width: 31%;
    padding-left: 3.5%;
-   width: 31%;
 }
 
 .news {
@@ -301,41 +305,8 @@ body {
 @media screen and (max-width: 768px) {
    
 
-    .header {
-  width: 90%;   
-  margin: o auto;   
-    }
 
-    .header-nav {
-        text-align: center;
-    }
-
-    
-
-    .top-wrap{
-        width: 100%;
-    }
-    .top-img {
-        width: 100%;
-    }
-
-
-
-    .menu {
-       display: flex;
-       width: 100%;
-    }
-
-    .eat {
-
-    }
-
-    .news {
-        width: 100%;
-    }
 }
-
-
 
 .top-wrap-conc {
     background-color: darkgray;
@@ -676,6 +647,7 @@ body {
 .drink-img {
     text-align: right;
     padding: 50px 70px 0 0;
+    vertical-align: bottom;
 }
 
 .coffee {
@@ -713,21 +685,46 @@ body {
     font-size: 13px;
 }
 
+.plate {
+     border-bottom: slategray 1px solid;
+}
+
 .plate-img {
     display: flex;
     flex-direction: column;
     float: left;
-    padding: 50px 0 0 70px;
+    padding: 50px 70px 0 70px;
 }
 
 .plate-menu {
-    text-align: right;
     padding: 50px 70px 0 0;
 }
 
 .plate-text {
     padding: 50px 0 330px 0;
 }
+
+.cupsoup-menu {
+    float: left;
+    
+}
+
+.cupsoup-title {
+    padding: 50px 0 0 70px;
+}
+
+.cupsoup-text {
+    padding: 50px 0 0 70px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.cupsoup-img {
+    text-align: right;
+    padding: 50px 70px 70px 0;
+}
+
+
 *{
-   outline: red 1px solid !important;
+   outline: re 1px solid !important;
 }
