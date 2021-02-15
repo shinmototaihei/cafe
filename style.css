@@ -678,6 +678,10 @@ body {
         width: 100%;
     }
 
+    .pan {
+        height: 200px;
+    }
+
     .pan-img {
         width: 10%;
     }
@@ -701,6 +705,7 @@ body {
         transform: scale(0.6);
         padding: 0;
         display: block;
+        
     }
 
     .soup-img {
@@ -728,8 +733,8 @@ body {
     }
 
     .designer-img {
-        padding: 0;
-        width: 50%;
+        padding: 30px 20px 0 0;
+        width: 30%;
     }
 
     .open-logo {
@@ -740,15 +745,58 @@ body {
         width: 100%;
     }
 
+    .design-logo {
+        width: 100px;
+        height: 20px;
+        padding: 30px 0 20px 20px;
+    }
+
+    .designer {
+        width: 110px;
+        height: 20px;
+        padding: 0 0 0 20px;
+    }
+
+    .design-text {
+        transform: scale(0.6);
+        transform-origin: left top;
+        padding: 30px 0 0 30px;
+        width: px;
+        display: inline-block;
+    }
+
+    .murabayashi-name {
+        width: 100px;
+    }
+
     .murabayashi-img {
         width: 100%;
+    }
+
+    .ooba-name {
+        width: 40px;
     }
 
     .ooba-img {
         width: 100%;
     }
+
+    .nakai-name {
+        width: 40px;
+    }
     .nakai-img {
         width: 100%;
+    }
+
+    .murabayashi-text,
+    .ooba-text,
+    .nakai-text {
+        transform: scale(0.6);
+        transform-origin: left top;
+    }
+
+    br {
+        display: none;
     }
 }
 
