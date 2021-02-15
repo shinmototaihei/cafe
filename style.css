@@ -151,50 +151,56 @@ body {
 .top-img {
     width: 70%;
     margin: 0 auto;
+   height: 40vh;
+   display: flex;
+}
 
+.top-img img {
+    height: 100%;
+    display: block;
 }
 
 .top-img1 {
     width: 45%;
-    height: 450px;
 }
 
 .top-img2 {
     width: 37%;
-    height: 450px;
 }
 .top-img3 {
     width: 18%;
-     height: 450px;
 }
-
-
 
 .menu {
     margin: 0 auto;
     padding: 40px 0 40px 0;
     width: 70%;
-   
 }
 
 .menu-content {
+    display: flex;
     width: 100%;
-   text-align: center;
+    justify-content: space-between;
+}
+.menu-content > a {
+    display: block;
+}
+.menu-content > a > img {
+    width: 100%;
 }
 
 .eat img{
-width: 31%;
 }
 
 .drink img{
-width: 31%;
-padding-left: 2.5%;
+
 }
 
 .item img{
-width: 31%;
-padding-left: 2.5%;
+
 }
+
+
 
 .news {
     width: 70%;
@@ -324,6 +330,7 @@ padding-left: 2.5%;
 
    .news {
        width: 100%;
+       margin: 0;
    }
 
    .top-news {
@@ -331,14 +338,22 @@ padding-left: 2.5%;
    }
    .news-list li a {
        font-size: 10px;
+       transform: scale(0.6);
    }
 
    .news-title {
    font-size: 10px;
+   transform: scale(0.6);
+   width: 100%;
 }
    
      .news-title h1 {
          font-size: 10px;
+     }
+
+     .news-list li {
+         padding: 0;
+         width: 100%;
      }
 
    .header-list {
@@ -361,7 +376,7 @@ padding-left: 2.5%;
    }
 
    .menu-content {
-
+      width: 100%;
    }
 
    .footer {
@@ -443,7 +458,7 @@ padding-left: 2.5%;
 
 .mon-menu {
     width: 70%;
-    border: slategray 1px solid;
+    border: rgb(206, 209, 212) 1px solid;
     margin: 0 auto;
     padding-top: 30px;
     margin-top: 30px;
@@ -569,7 +584,7 @@ padding-left: 2.5%;
 }
 
 .murabayashi {
-    width: 250px;
+    width: 25%;
     padding-left: 30px;
 }
 
@@ -579,7 +594,7 @@ padding-left: 2.5%;
 }
 
 .ooba {
-    width: 250px;
+    width: 25%;
     
 }
 
@@ -589,7 +604,7 @@ padding-left: 2.5%;
 }
 
 .nakai {
-    width: 250px;
+    width: 25%;
    padding-right: 30px;
 }
 
@@ -604,7 +619,6 @@ padding-left: 2.5%;
 }
 
 .design-content {
-    width: 400px;
     padding: 50px 0 0 70px;
 }
 
@@ -626,6 +640,8 @@ padding-left: 2.5%;
     padding: 70px 0 100px 70px;
     position: relative;
 }
+
+
 
 .open-text {
     font-size: 13px;
@@ -654,6 +670,86 @@ padding-left: 2.5%;
   height: 40px;
   bottom: 20px;
   right: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .top-img-conc {
+        width: 100%;
+    }
+
+    .pan-img {
+        width: 10%;
+    }
+
+    .pan-title,
+    .pan-title2,
+    .pan-text {
+        padding: 15px;
+    }
+
+    .pan-title2 {
+        font-size: 10px;
+    }
+
+    .pan-title {
+        font-size: 10px;
+    }
+
+    .pan-text {
+        font-size: 10px;
+        transform: scale(0.6);
+        padding: 0;
+        display: block;
+    }
+
+    .soup-img {
+        width: 10%;
+    }
+
+    .soup {
+        clear: both;
+    }
+
+    .veg-img {
+        width: 10%;
+    }
+
+    .bag-img {
+        width: 10%;
+    }
+
+    .mon-menu {
+        width: 100%;
+    }
+
+    .design-content {
+        padding: 0;
+    }
+
+    .designer-img {
+        padding: 0;
+        width: 50%;
+    }
+
+    .open-logo {
+        width: 100%;
+    }
+
+    .designer {
+        width: 100%;
+    }
+
+    .murabayashi-img {
+        width: 100%;
+    }
+
+    .ooba-img {
+        width: 100%;
+    }
+    .nakai-img {
+        width: 100%;
+    }
 }
 
 
