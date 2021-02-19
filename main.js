@@ -3,3 +3,8 @@ $('#top-btn').click(function () {
         scrollTop: 0
     }, 700);
 });
+
+$("#hamburger").click(function () {
+    $(this).toggleClass("active");
+    $(".menu-content2").toggleClass("open");
+});

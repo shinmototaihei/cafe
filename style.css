@@ -144,6 +144,7 @@ body {
     transition: all 0.5s;
 }
 
+
 .top-wrap {
     background-color: darkgray;
 }
@@ -169,6 +170,10 @@ body {
 }
 .top-img3 {
     width: 18%;
+}
+
+.menu-content2 {
+    display: none;
 }
 
 .menu {
@@ -313,8 +318,68 @@ body {
     padding: 20px 0 10px 15%;
 }
 
+#hamburger {
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
+    .menu-content2{
+    display: block;
+    width: calc(50%);
+    height: 300px;
+    text-align: center;
+    transition: .2s;
+    position: fixed;
+    top: 70px;
+    left: calc(-100% - 1px);
+    background: #fff;
+    color: #333333;
+    float: right;
+  }
+  .menu-content2 li a{
+    color: #333333;
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 0.5px solid #2662D5;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-content2 li{
+    width: 100%;
+    text-align: left;
+  }
+  .menu-content2.open{
+    left: 50%;
+    
+  }
+　.menu-content2 .menu-title{
+    margin: 40px 20px;
+    font-size: 2.2rem;
+    color: #333333;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .menu-title {
+     margin: 10px 0 10px 0;
+  }
+
+
+   .header-list {
+       display: none;
+   }
+      .header-list li {
+       font-size: 10px;
+       transform: scale(0.6);
+       padding-left: 20px;
+   }
+
+   .header-nav {
+       margin-top: 10px;
+   }
+
+
    .top-img {
        width: 100%;
       
@@ -322,6 +387,10 @@ body {
 
    .header-logo {
        width: 30%;
+   }
+
+   .header-list {
+       width: 100%;
    }
 
    .line {
@@ -336,6 +405,8 @@ body {
    .top-news {
        width: 50%;
    }
+
+
    .news-list li a {
        font-size: 10px;
        transform: scale(0.6);
@@ -356,20 +427,8 @@ body {
          width: 100%;
      }
 
-   .header-list {
-      margin: 0;
-      padding-left: 10px;
-   }
 
-   .header-list li {
-       font-size: 10px;
-       transform: scale(0.6);
-       padding-left: 20px;
-   }
 
-   .header-list a {
-       padding-left: 
-   }
 
    .menu {
        width: 100%;
@@ -437,6 +496,40 @@ body {
        font-size: 10px;
        transform: scale(0.6);  
    }
+
+   #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 10px;
+    right: 20px;
+    transition: 0.4s;
+    display: block;
+  }
+  #hamburger span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    transition: 0.8s;
+  }
+  #hamburger span:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+  }
+  #hamburger span:nth-of-type(2) {
+    position: absolute;
+    top: 20px;
+    left: 2px;
+  }
+  #hamburger span:nth-of-type(3) {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+  }
 
   
 }
@@ -548,6 +641,10 @@ body {
     border-bottom: slategray 1px solid;;
 }
 
+.bag-content {
+    text-align: right;
+}
+
 .bag-img {
     float: left;
     padding-left: 70px;
@@ -556,7 +653,6 @@ body {
 
 .bag-title {
     font-size: 28px;
-    text-align: right;
     padding: 50px 50px 30px 0;
 }
 
@@ -564,7 +660,6 @@ body {
     font-size: 13px;
     line-height: 25px;
     padding: 0 50px 0 0;
-    text-align: right;
     padding-bottom: 70px;
 }
 
@@ -634,19 +729,19 @@ body {
 
 }
 
-.open {
+.opens {
     padding: 70px 0 100px 70px;
     position: relative;
 }
 
 
 
-.open-text {
+.opens-text {
     font-size: 13px;
     line-height: 25px;
 }
 
-.open-text span {
+.opens-text span {
     padding-top: 30px;
 }
 
@@ -703,7 +798,7 @@ body {
     .pan-text {
         font-size: 10px;
         transform: scale(0.6);
-        transform-origin: left;
+        transform-origin: left top;
         padding: 0 0 0 50px;
         display: block;
         width: 320px;
@@ -723,25 +818,25 @@ body {
 
     .soup-title {
         font-size: 10px;
-        padding: 30px 30px 0 0;
+        padding: 30px 0px 10px 0;
     }
 
     .soup-content {
-        width: 50%;
+        width: 40%;
         float: right;
     }
 
     .soup-text {
         font-size: 10px;
         transform: scale(0.6);
-        transform-origin: left;
-        width: 250px;
+        transform-origin: left top;
+        width: 240px;
     }
 
     .veg {
         display: flex;
         align-items: flex-start;
-        height: 120px;
+        height: 110px;
     }
 
     .veg-content {
@@ -761,14 +856,43 @@ body {
     .veg-text {
         font-size: 10px;
         transform: scale(0.6);
-        transform-origin: left;
+        transform-origin: left top;
         padding: 0 0 0 50px;
         display: block;
         width: 350px;
+        line-height: 20px;
+    }
+
+    .bag {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .bag-content {
+        width: 47%;
+        
+    }
+
+    .bag-text {
+         padding: 0px 0 15px 0px;
+        font-size: 10px;
+        font-size: 10px;
+        transform: scale(0.6);
+        transform-origin: left top;
+        width: 290px;
     }
 
     .bag-img {
-        width: 10%;
+        width: 30%;
+          padding: 0 0 0 30px;
+        margin-right: 50px;
+    }
+
+     .bag-title {
+        font-size: 10px;
+        padding: 30px 0px 10px 0;
+        text-align: right;
+        width: ;
     }
 
     .mon-menu {
@@ -786,16 +910,16 @@ body {
     }
 
     .designer-img {
-        padding: 30px 30px 0 50px;
+        padding: 30px 25px 0 50px;
         width: 30%;
         
     }
 
-    .open {
+    .opens {
         padding: 0 30px 80px 30px;
     }
 
-    .open-logo {
+    .opens-logo {
         width: 120px;
     }
 
@@ -982,7 +1106,8 @@ body {
 .drink-img {
     text-align: right;
     padding: 50px 70px 0 0;
-    vertical-align: bottom;
+    flex-direction: column;
+    display: flex;
 }
 
 .coffee {
@@ -1059,6 +1184,156 @@ body {
     padding: 50px 70px 70px 0;
 }
 
+
+@media screen and (max-width: 768px) {
+
+    .menu2 {
+        width: 100%;
+    }
+
+    .top-img-menu {
+        width: 100%;
+    }
+
+    .menu2-title {
+        font-size: 12px;
+        padding: 0 0 0 30px;
+    }
+
+    .menu2-nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu2-nav li {
+        transform-origin: top;
+        transform: scale(0.6);
+    }
+
+    .menu2-nav li a {
+        display: inline-block;
+        
+    }
+
+    .morning-menu {
+        width: 50%;
+        height: 150px;
+    }
+
+    .morning-title {
+        width: 80%;
+        padding: 0 0 20px 30px;
+    }
+
+    .morning-text {
+        padding: 0 0 0 70px;
+        transform: scale(0.4);
+        transform-origin: left top;
+        width: 300px;
+        display: block;
+    }
+
+    .morning-img {
+        padding: 0;
+    }
+
+    .morning-img img {
+        width: 40%;
+        padding: 0
+        30px 0 0px;
+    }
+
+    .lunch {
+        display: flex;
+    }
+
+    .lunch-title {
+        width: 75%;
+        padding: 20px 30px 0 10px;
+    }
+
+    .lunch-text {
+        transform: scale(0.4);
+        transform-origin: top left;
+        padding: 30px 0px 0 30px;
+        width: 300px;
+    }
+
+    .lunch-menu {
+        width: 50%;
+        padding: 0;
+        display: block;
+        height: 300px;
+    }
+
+    .lunch-img {
+        padding: 20px 0 0 30px;
+       width: 50%;
+    }
+
+    .lunch-img img {
+        width: 90%;
+        align-items: flex-start;
+    }
+
+    .yoku {
+        width: 70%;
+    }
+
+    .yoku-text {
+        transform: scale(0.6);
+        transform-origin: top;
+    }
+
+    .drink-menu {
+        padding: 0;
+    }
+
+    .drink-img img {
+        width: 30%;
+    }
+
+    .drink-title {
+        width: 50%;
+    }
+
+    .coffee {
+        width: 50%;
+    }
+
+    .coffee-text {
+        width: 70%;
+        padding: 0;
+    }
+
+    .tea {
+        width: 50%;
+    }
+
+    .tea-text {
+        width: 50%;
+    }
+
+    .juice {
+        width: 50%;
+    }
+
+    .juice-text {
+        width: 50%;
+    }
+
+    .plate-img img {
+        width: 30%;
+    }
+
+    .plate-title {
+        width: 30%;
+    }
+
+    .cupsoup-title {
+        width: 30%;
+    }
+}
 
 *{
    outline: re 1px solid !important;
